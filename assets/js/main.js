@@ -274,5 +274,4 @@
 
   window.clickExperience = clickExperience;
   window.clickEducation = clickEducation;
-  
 })()

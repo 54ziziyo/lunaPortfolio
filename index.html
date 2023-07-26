@@ -54,7 +54,7 @@
   <div id="hero" class="home">
 
     <div class="container">
-      <div class="hero-content">
+      <div class="hero-content slide-up">
         <h1>I'm <span class="typed" data-typed-items="Luna, Project Manager, Developer, Designer, Marketing planner"></span></h1>
         <p>Project Manager, Developer, Designer, Marketing planner</p>
         <ul class="list-unstyled list-social">
@@ -67,6 +67,7 @@
     </div>
   </div><!-- End Hero -->
 
+
   <main id="main">
 
     <!-- ======= About Section ======= -->
@@ -74,7 +75,7 @@
       <div class="container">
         <div class="row justify-content-between align-items-center">
 
-          <div class="col-lg-4 d-flex justify-content-center">
+          <div class="col-lg-4 d-flex justify-content-center slide-right">
             <div class="div-img-bg">
               <div class="about-img">
                 <img src="https://cdn01.pinkoi.com/product/aZgvB9di/8/800x0.jpg" class="img-responsive" alt="me">
@@ -82,7 +83,7 @@
             </div>
           </div>
 
-          <div class="col-lg-7">
+          <div class="col-lg-7 slide-left">
             <div class="about-descr">
               <p class="p-heading uppercase">About</p>
               <p class="separator">I graduated from National Taipei University with a degree in Digital Marketing. While working in digital marketing
@@ -105,7 +106,7 @@
 
     <!-- ======= Services Section ======= -->
     <div id="services">
-      <div class="container">
+      <div class="container slide-down">
 
         <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
@@ -170,19 +171,18 @@
 
     </div>
     <!-- End Services Section -->
-<section id="resume" class="resume">
+<section id="resume" class="resume slide-up">
   <div class="container">
 
     <div class="section-title">
       <h2>Resume</h2>
     </div>
-    
     <div class="d-flex justify-content-center gap-2 mb-4">
       <button class="btn" onClick="clickExperience()">experience</button>
       <button class="btn-outline" onclick="clickEducation()">education</button>
     </div>
 
-    <div class="row">
+    <div class="row slide-left">
       <div class="col-lg-12" id="experience">
         <h3 class="resume-title">Experience</h3>
         <div class="resume-item">
@@ -289,11 +289,26 @@
         </div>
       </div>
     </div>
-
+    <!-- End Portfolio Section -->
+    <div class="rellax" data-rellax-speed="6">
+      <div class="decorate-bg-1"></div>
+    </div>
+    <div class="rellax" data-rellax-speed="7">
+      <div class="decorate-bg-2"></div>
+    </div>
+    <div class="rellax" data-rellax-speed="3">
+      <div class="decorate-hollow-1"></div>
+    </div>
+    <div class="rellax" data-rellax-speed="3">
+      <div class="decorate-hollow-2"></div>
+    </div>
+    <div class="rellax" data-rellax-speed="3">
+      <div class="decorate-hollow-3"></div>
+    </div>
   </div>
 </section>
     <!-- ======= Portfolio Section ======= -->
-    <div id="portfolio" class="paddsection pt-5">
+    <div id="portfolio" class="paddsection pt-5 slide-up">
 
       <div class="container">
         <div class="section-title text-center">
@@ -405,10 +420,8 @@
         </div>
       </div>
     </div>
-    <!-- End Portfolio Section -->
-
     <div id="contact" class="paddsection">
-      <div class="container">
+      <div class="container slide-up">
         <div class="contact-block1">
           <div class="row">
 
@@ -419,11 +432,11 @@
             </div>
             <div class="col-lg-6 pe-l-5 pt-3">
               <ul class="contact-details d-flex gap-4 flex-column">
-                <li class="d-flex justify-content-between"><span>Address：</span><a href="https://goo.gl/maps/CZEVKXfU4iKMDeSs6">Tamsui District, New Taipei City, Taiwan</a></li>
-                <li class="d-flex justify-content-between"><span>Mail：</span><a href="mailto:qwer31238@gmail.com">qwer31238@gmail.com</a></li>
-                <li class="d-flex justify-content-between"><span>Phone：</span><a href="tellto:0980191031">0980-191-031</a></li>
-                <li class="d-flex justify-content-between"><span>Instagram</span><a href="https://www.instagram.com/lululuna_ya">lululuna_ya</a></li>
-                <li class="d-flex justify-content-between"><span>Line：</span><a href="https://line.me/ti/p/0ULHLMUbkQ">870119sally</a></li>
+                <li class="d-flex justify-content-between"><span class="uppercase fw-bolder">Address</span><a href="https://goo.gl/maps/CZEVKXfU4iKMDeSs6">Tamsui District, New Taipei City, Taiwan</a></li>
+                <li class="d-flex justify-content-between"><span class="uppercase fw-bolder">Mail</span><a href="mailto:qwer31238@gmail.com">qwer31238@gmail.com</a></li>
+                <li class="d-flex justify-content-between"><span class="uppercase fw-bolder">Phone</span><a href="tellto:0980191031">0980-191-031</a></li>
+                <li class="d-flex justify-content-between"><span class="uppercase fw-bolder">Instagram</span><a href="https://www.instagram.com/lululuna_ya">lululuna_ya</a></li>
+                <li class="d-flex justify-content-between"><span class="uppercase fw-bolder">Line</span><a href="https://line.me/ti/p/0ULHLMUbkQ">870119sally</a></li>
               </ul>
             </div>
             <div class="col-lg-6 pt-3">
@@ -465,9 +478,50 @@
   <script src="https://54ziziyo.github.io/lunaPortfolio/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="https://54ziziyo.github.io/lunaPortfolio/assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="https://54ziziyo.github.io/lunaPortfolio/assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="https://54ziziyo.github.io/lunaPortfolio/assets/js/main.js"></script>
+  <script>
+  ScrollReveal({ reset: true });
+  var slideUp = {
+    origin: 'bottom',
+    distance: '50px',
+    duration: 1200,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    scale: 0.85,
+  };
+  var slideDown = {
+    origin: 'top',
+    distance: '50px',
+    duration: 1200,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    scale: 0.85,
+  };
+  var slideLeft = {
+    origin: 'right',
+    distance: '50px',
+    duration: 1200,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    scale: 0.85,
+  };
+  var slideRight = {
+    origin: 'left',
+    distance: '50px',
+    duration: 1200,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    scale: 0.85,
+  };
+
+  ScrollReveal().reveal('.slide-up', slideUp);
+  ScrollReveal().reveal('.slide-down', slideDown);
+  ScrollReveal().reveal('.slide-left', slideLeft);
+  ScrollReveal().reveal('.slide-right', slideRight);
+
+  var rellax = new Rellax('.rellax');
+  
+  </script>
 </body>
 
 </html>
